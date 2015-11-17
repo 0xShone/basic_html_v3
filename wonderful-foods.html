@@ -50,7 +50,7 @@
             </tr>
           </thead>
         </table>
-        <div style="background:skyblue;">
+        <div>
           <p>Fantastic<br><strong>TKG</strong>　→ <a href="more.html" target="_blank">Look more</a> → <a href="#stuff">Jump to Materials</a></p>
           <h2 id="stuff">Materials</h2>
           <ul>
@@ -103,9 +103,21 @@
         method: get / post
       input
       -->
+      <div style="background:orange;">
         <h1>Survey</h1>
         <form action="survey.php" method="post">
           <p>name: <input type="text" name="name" size="40" placeholder="please enter name"></p>
+          <p>
+            Phone:
+            <label><input type="checkbox" name="phone" value="android" checked> Android</label>
+            <input type="checkbox" name="phone" value="iphone" id="iphone"><label for="iphone">iPhone</label>
+          </p>
+          <p>
+            Color:
+            <label><input type="radio" name="color" value="red" checked> Red</label>
+            <input type="radio" name="color" value="blue" id="blue">
+            <label for="blue"> Blue</label>
+          </p>
           <p>mail address: <input type="text" name="email" size="50" maxlength="5" value="abc" disabled></p>
           <p>login: <input type="password" name="password" size="50"></p>
           <input type="hidden" name="user_id" value="23423">
@@ -119,6 +131,7 @@
           <p><input type="submit" value="submit!"></p>
         </form>
       </article>
+    </div>
     </section>
 
     <aside>
