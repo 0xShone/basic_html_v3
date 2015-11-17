@@ -106,9 +106,16 @@
         <h1>Survey</h1>
         <form action="survey.php" method="post">
           <p>name: <input type="text" name="name" size="40" placeholder="please enter name"></p>
-          <p>mail address: <input type="text" name="email" size="50" maxlength="5" value="abc"></p>
+          <p>mail address: <input type="text" name="email" size="50" maxlength="5" value="abc" disabled></p>
           <p>login: <input type="password" name="password" size="50"></p>
           <input type="hidden" name="user_id" value="23423">
+          <p>
+            comment:
+            <textarea name="comment" cols="40" rows="5">comment</textarea>
+          </p>
+          <p>
+            <button type="button"><strong>run js!</strong></button>
+          </p>
           <p><input type="submit" value="submit!"></p>
         </form>
       </article>
